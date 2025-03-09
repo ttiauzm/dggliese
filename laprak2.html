@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memahami Flow Dokumen dalam HTML & CSS</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            text-align: justify;
+            transition: background-color 0.5s ease; /* Efek transisi */
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            background: rgba(255, 84, 104, 0.3);
+            border: 2px solid rgb(255, 84, 104);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        span {
+            background: white;
+            border: 1px solid black;
+            padding: 2px 4px;
+        }
+        .interactive {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: rgb(255, 84, 104);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: rgb(200, 50, 70);
+        }
+        /* Perubahan warna latar belakang saat tombol ditekan */
+        .btn:focus ~ body,
+        .btn:active ~ body {
+            background-color: #ffeadb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Memahami Flow Dokumen dalam HTML & CSS</h1>
+    <p>
+        Saya adalah elemen blok dasar. Elemen blok yang berdampingan akan berada di baris baru di bawah saya.
+    </p>
+    <p>
+        Secara default, elemen ini akan mengisi 100% dari lebar elemen induknya dan setinggi kontennya.
+    </p>
+    <p>
+        Elemen blok dipisahkan oleh margin. Karena margin collapsing, jarak yang terlihat akan sebesar margin terbesar dari dua elemen yang bersentuhan.
+    </p>
+    <p>
+        Elemen inline <span>seperti ini</span> dan <span>yang ini</span> tetap berada di satu baris selama masih ada ruang.
+    </p>
+    <p>
+        Jika tidak ada cukup ruang, elemen inline akan <span>membungkus ke baris baru</span> atau dipaksa ke baris berikutnya seperti gambar di bawah ini:
+    </p>
+    <p style="text-align: center;">
+        <img src="https://mdn.github.io/shared-assets/images/examples/long.jpg" alt="Snippet of cloth" width="250">
+    </p>
+    
+    <div class="interactive">
+        <button class="btn">Tombol kemana saja</button>
+    </div>
+</body>
+</html>
