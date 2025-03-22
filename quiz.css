@@ -1,0 +1,645 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 0px;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #543310;
+    padding: 15px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #F8F4E1;
+    font-family: 'Inter',sans-serif;
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: normal;
+    color: #F8F4E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JomolHari', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    word-wrap: break-word
+}
+
+.btn {
+    width: 223px;
+    height: 61px;
+    background-color: #543310;
+    color: #F8F4E1;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #F8F4E1;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.rating {
+    margin-top: 20px;
+    background-color: #543310;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    padding: 10px;
+}
+
+.rating p{
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+}
+
+.another-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#F8F4E1 ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F4E1;
+    padding: 20px;
+    border-radius: 30px;
+    /* box-shadow: 0px 4px 10px rgba(0,0,0,0.1); */
+    /* max-width: 800px; */
+    width: 1280px;
+    height: 504px;
+    text-align: center;
+}
+
+.text-section {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.badge {
+    background-color: #543310;
+    color: #F8F4E1;
+    width: 326px;
+    height: 65px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.quote {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #543310;
+    font-family: Jomolhari;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.image-section img {
+    width: 479px;
+    height: 331;
+    flex-shrink: 0;
+}
+
+.best-seller, .testimonials, .faq {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#F8F4E1 ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.best-seller h2 {
+    color: #543310;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 100px;
+}
+
+.box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F8F4E1;
+    padding: 20px;
+    border-radius: 30px;
+    /* box-shadow: 0px 4px 10px rgba(0,0,0,0.1); */
+    /* max-width: 800px; */
+    width: 1280px;
+    height: 394px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+
+.box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F8F4E1;
+    padding: 20px;
+    border-radius: 30px;
+    /* box-shadow: 0px 4px 10px rgba(0,0,0,0.1); */
+    /* max-width: 800px; */
+    width: 1280px;
+    height: 394px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #543310;
+    color: #F8F4E1;
+    width: 310px;
+    height: 394px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    color: #F8F4E1;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Inria Serif";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.product-card img {
+    width: 224px;
+    height: 164px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    padding-left: 40px;
+}
+
+.product-card h3 {
+    flex-shrink: 0;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product-card p {
+    width: 250px;
+    color: #F8F4E1;
+    text-align: center;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    padding-left: 25px;
+    padding-top: 0;
+    margin-top: -30px;
+
+}
+
+/* .testimonial, .faq-item {
+    margin: 20px 0;
+    flex-direction: column;
+} */
+
+.testimonials {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1200px;
+}
+
+.testimonials h2 {
+    color: #543310;
+    font-family: Jomolhari;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.atas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.atas h3 {
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 220px;
+}
+
+.box-3 {
+    background-color: #543310;
+    color: #F8F4E1;
+    width: 800px;
+    height: 394px;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.testimonial {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 349px;
+    
+}
+
+.testimonial img {
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.testimonial p {
+    width: 236px;
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.testimonial:nth-child(2) {
+    position: relative;
+}
+
+.testimonial:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+}
+
+.faq {
+    background-color: #543310; /* Warna coklat gelap */
+    color: #F8F4E1; /* Warna teks putih */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    margin-bottom: 30px;
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq-item {
+    max-width: 900px;
+    margin: 0 auto 20px auto; /* Agar teks tetap rapi di tengah */
+    text-align: left;
+}
+
+.faq-item h4 {
+    margin-bottom: 5px;
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq-item p {
+    line-height: 1.6;
+    color: #F8F4E1;
+    font-family: Jomolhari;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+footer {
+    background-color: #F8F4E1;
+    color: #F8F4E1;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Jarak antara teks dan tombol */
+    background-color: #FAF5E4;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.call-to-action p {
+    color: #543310;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.btn-order {
+    display: flex;
+    align-items: center;
+    background-color: #543310;
+    color: #F8F4E1;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Jomolhari', serif;
+    font-weight: 400;
+    border-radius: 30px;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.btn-order img {
+    width: 32px;
+    height: auto;
+}
+
+.last {
+    background-color: #543310; /* Warna coklat tua */
+    width: 100%;
+    height: 349px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Opsional: Untuk pengaturan konten di dalamnya */
+    align-items: center;
+    justify-content: center;    
+}
+
+.box-5 {
+    width: 1024px;
+    height: 217px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F8F4E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about {
+    width: 275px;
+    height: 94px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    color: #543310;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -30px;
+}
+
+.contact h4 {
+    width: 274px;
+    height: 119px;
+    flex-shrink: 0;
+    color: #543310;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 80px;
+    /* padding: 20px; */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen ke bawah */
+    align-items: flex-start; /* Menyamakan posisi ke kiri */
+    text-align: left; /* Pastikan teks rata kiri */
+    gap: 2px;
+
+}
+
+.contact p {
+    /* width: 274px;
+    height: 119px; */
+    flex-shrink: 0;
+    color: #543310;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.contact img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .contact-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: -100px;
+} */
+
+.legal {
+    /* width: 170px;
+    height: 94px; */
+    flex-shrink: 0;
+    color: #543310;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.legal p {
+    margin-top: 40px;
+}
+
+.strip {
+    list-style-type: none; /* Hilangkan default bullet */
+    padding: 0;
+    margin-top: auto;
+    text-align: left;
+}
+
+.strip li::before {
+    content: "- "; /* Tambahkan strip sebelum teks */
+    color: #5a3826; /* Warna bisa disesuaikan */
+    font-weight: bold;
+    line-height: normal;
+}
+
+.strip li {
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
