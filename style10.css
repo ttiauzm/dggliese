@@ -1,0 +1,26 @@
+.card {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .card-img-top {
+      height: 150px;
+    }
+  }
+  
