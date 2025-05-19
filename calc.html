@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Sederhana</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <h2>Kalkulator</h2>
+
+        <label>Bilangan Pertama:</label>
+        <input type="number" id="angka1"><br><br>
+
+        <label>Bilangan Kedua:</label>
+        <input type="number" id="angka2"><br><br>
+
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">×</button>
+        <button onclick="hitung('/')">÷</button>
+
+        <div class="output">
+            <p>Hasil: <span id="output"></span></p>
+        </div>
+
+        <script>
+            function hitung(operator) {
+                let angka1 = parseFloat(document.getElementById("angka1").value);
+                let angka2 = parseFloat(document.getElementById("angka2").value);
+                let hasil;
+
+                if (isNaN(angka1) || isNaN(angka2)) {
+                    hasil = "Masukkan angka yang valid!";
+                } else {
+                    switch (operator) {
+                    case '+':
+                        hasil = angka1 + angka2;
+                        break;
+                    case '-':
+                        hasil = angka1 - angka2;
+                        break;
+                    case '*':
+                        hasil = angka1 * angka2;
+                        break;
+                    case '/':
+                        if(angka2 == 0) {
+                            hasil = "Tidak terdefinisi";
+                            break;
+                        } else {
+                            hasil = angka1 / angka2;
+                            break;
+                        }
+                    }
+                }
+
+                document.getElementById("output").innerHTML = hasil;
+            }
+        </script>
+    </div>
+</body>
+</html>
